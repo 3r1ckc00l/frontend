@@ -1,0 +1,244 @@
+/* custom font - Montserrat */
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../assets/fonts/montserrat/Montserrat-Regular.otf');
+    font-style: normal;
+}
+.montserrat_regular {
+    font-family: 'Montserrat-Regular',arial,sans-serif;
+}
+@font-face {
+    font-family: 'Montserrat-Light';
+    src: url('../assets/fonts/montserrat/Montserrat-Light.otf');
+    font-style: normal;
+}
+.montserrat_light {
+    font-family: 'Montserrat-Light',arial,sans-serif;
+}
+@font-face {
+    font-family: 'Montserrat-Hairline';
+    src: url('../assets/fonts/montserrat/Montserrat-Hairline.otf');
+    font-style: normal;
+}
+.montserrat_hairline {
+    font-family: 'Montserrat-Hairline',arial,sans-serif;
+}
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../assets/fonts/montserrat/Montserrat-Bold.otf');
+    font-style: normal;
+}
+.montserrat_bold {
+    font-family: 'Montserrat-Bold',arial,sans-serif;
+}
+@font-face {
+    font-family: 'Montserrat-Black';
+    src: url('../assets/fonts/montserrat/Montserrat-Black.otf');
+    font-style: normal;
+}
+.montserrat_black {
+    font-family: 'Montserrat-Black',arial,sans-serif;
+}
+
+/* custom font - Roboto */
+@font-face {
+    font-family: 'Roboto-ThinItalic';
+    src: url('../assets/fonts/roboto/Roboto-ThinItalic.ttf');
+    font-style: normal;
+}
+.roboto_thinItalic {
+    font-family: 'Roboto-ThinItalic',arial,sans-serif;
+}
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url('../assets/fonts/roboto/Roboto-Thin.ttf');
+    font-style: normal;
+}
+.roboto_thin {
+    font-family: 'Roboto-Thin',arial,sans-serif;
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../assets/fonts/roboto/Roboto-Regular.ttf');
+    font-style: normal;
+}
+.roboto_regular {
+    font-family: 'Roboto-Regular',arial,sans-serif;
+}
+@font-face {
+    font-family: 'Roboto-MediumItalic';
+    src: url('../assets/fonts/roboto/Roboto-MediumItalic.ttf');
+    font-style: normal;
+}
+.roboto_mediumItalic {
+    font-family: 'Roboto-MediumItalic',arial,sans-serif;
+}
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../assets/fonts/roboto/Roboto-Medium.ttf');
+    font-style: normal;
+}
+.roboto_medium {
+    font-family: 'Roboto-Medium',arial,sans-serif;
+}
+@font-face {
+    font-family: 'Roboto-LightItalic';
+    src: url('../assets/fonts/roboto/Roboto-LightItalic.ttf');
+    font-style: normal;
+}
+.roboto_lightItalic {
+    font-family: 'Roboto-LightItalic',arial,sans-serif;
+}
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../assets/fonts/roboto/Roboto-Light.ttf');
+    font-style: normal;
+}
+.roboto_light {
+    font-family: 'Roboto-Light',arial,sans-serif;
+}
+@font-face {
+    font-family: 'Roboto-Italic';
+    src: url('../assets/fonts/roboto/Roboto-Italic.ttf');
+    font-style: normal;
+}
+.roboto_italic {
+    font-family: 'Roboto-Italic',arial,sans-serif;
+}
+@font-face {
+    font-family: 'Roboto-CondensedItalic';
+    src: url('../assets/fonts/roboto/Roboto-CondensedItalic.ttf');
+    font-style: normal;
+}
+.roboto_condensedItalic {
+    font-family: 'Roboto-CondensedItalic',arial,sans-serif;
+}
+@font-face {
+    font-family: 'Roboto-Condensed';
+    src: url('../assets/fonts/roboto/Roboto-Condensed.ttf');
+    font-style: normal;
+}
+.roboto_condensed {
+    font-family: 'Roboto-Condensed',arial,sans-serif;
+}
+@font-face {
+    font-family: 'Roboto-BoldItalic';
+    src: url('../assets/fonts/roboto/Roboto-BoldItalic.ttf');
+    font-style: normal;
+}
+.roboto_bolditalic {
+    font-family: 'Roboto-BoldItalic',arial,sans-serif;
+}
+@font-face {
+    font-family: 'Roboto-BoldCondensedItalic';
+    src: url('../assets/fonts/roboto/Roboto-BoldCondensedItalic.ttf');
+    font-style: normal;
+}
+.roboto_boldcondenseditalic {
+    font-family: 'Roboto-BoldCondensedItalic',arial,sans-serif;
+}
+@font-face {
+    font-family: 'Roboto-BoldCondensed';
+    src: url('../assets/fonts/roboto/Roboto-BoldCondensed.ttf');
+    font-style: normal;
+}
+.roboto_boldcondensed {
+    font-family: 'Roboto-BoldCondensed',arial,sans-serif;
+}
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../assets/fonts/roboto/Roboto-Bold.ttf');
+    font-style: normal;
+}
+.roboto_bold {
+    font-family: 'Roboto-Bold',arial,sans-serif;
+}
+@font-face {
+    font-family: 'Roboto-BlackItalic';
+    src: url('../assets/fonts/roboto/Roboto-BlackItalic.ttf');
+    font-style: normal;
+}
+.roboto_blackitalic {
+    font-family: 'Roboto-BlackItalic',arial,sans-serif;
+}
+@font-face {
+    font-family: 'Roboto-Black';
+    src: url('../assets/fonts/roboto/Roboto-Black.ttf');
+    font-style: normal;
+}
+.roboto_black {
+    font-family: 'Roboto-Black',arial,sans-serif;
+}
+
+html, body, .module {
+    font-family: 'Montserrat-Light',arial,sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+h1 {
+    font-family: 'Montserrat-Bold',arial,sans-serif;
+    font-size: 33px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.fprice {
+    font-family: 'Montserrat-Bold',arial,sans-serif;
+    font-size: 55px;
+}
+.bprice {
+    font-family: 'Montserrat-Bold',arial,sans-serif;
+    font-size: 16px;
+}
+.shooting_star {
+    font-size: 15px;
+}
+
+.module {
+    font-size: 15px;
+}
+
+.package {
+    font-family: 'Roboto-Thin',arial,sans-serif;
+    font-size: 15px;
+}
+.package h4 {
+    font-family: 'Montserrat-Bold',arial,sans-serif;
+}
+.package p {
+    line-height: 1.8;
+}
+.user_reg {
+    background-color:#217FDE;
+}
+
+.font-weight-bold {
+    font-family: 'Roboto-Medium',arial,sans-serif;
+}
+
+.aboutus, .aboutus h5 {
+    font-family: 'Roboto-Light',arial,sans-serif;
+    font-size: 14px;
+}
+.aboutus h5, .payment h5 {
+    font-family: 'Roboto-Medium',arial,sans-serif;
+    color: #7C7C7C;
+}
+
+.payment {
+    font-family: 'Roboto-Regular',arial,sans-serif;
+    font-size: 14px;
+}
+.payment p {
+    font-family: 'Roboto-Light',arial,sans-serif;
+    font-size: 12px;
+    color: #7C7C7C;
+}
+
+.footer {
+    font-family: 'Roboto-Thin',arial,sans-serif;
+    font-size: 15px;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        {% if metaDesc|default(0) %}
+            <meta name="description" content="{{ metaDesc }}">
+        {% endif %}
+        <meta name="author" content="">
+        <title>{{ metaTitle|default('Example Layout')|striptags }}</title>
+        
+        <!-- Bootstrap core CSS -->
+        <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/templates/bootstrap.css">
+
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    </head>
+    <body>
+        {% block navigation %}{% endblock %}
+        {% block content %}{% endblock %}
+        {% block footer %}{% endblock %}
+    </body>
+</html>

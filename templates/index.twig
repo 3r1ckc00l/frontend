@@ -1,0 +1,544 @@
+{% extends 'layout.twig' %}
+
+{% block navigation %}
+  <!-- Top Nav -->
+  <div class="container border-bottom py-3">
+    <div class="row">
+      <div class="col-lg-6 text-left">
+        <a href="#" class="text-dark"><small><i class="fas fa-bookmark text-primary"></i> Gratis Ebook 9 Cara Cerdas Menggunakan Domain [ x ]</small></a>
+      </div>
+      <div class="col-lg-6 text-right">
+        <a href="#" class="text-dark ml-4"><i class="fas fa-phone-alt"></i> 0274-5305505</a>
+        <a href="#" class="text-dark ml-4"><i class="fas fa-comments"></i> Live Chat</a>
+        <a href="#" class="text-dark ml-4"><i class="fas fa-chalkboard-teacher"></i> Member Area</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Nav -->
+  <nav class="navbar navbar-expand-lg static-top">
+    <div class="container border-bottom">
+      <a class="navbar-brand" href="#"><img src="../assets/images/nh-logo.png" class="my-3" style="height:20px" alt="logo_niaga"></a>
+      <button class="navbar-toggler navbar-dark bg-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#"><span class="nav-link">Hosting</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#"><span class="nav-link">Domain</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#"><span class="nav-link">Service</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#"><span class="nav-link">Website</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#"><span class="nav-link">Afiliasi</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#"><span class="nav-link">Promo</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#"><span class="nav-link">Pembayaran</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#"><span class="nav-link">Review</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#"><span class="nav-link">Kontak</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#"><span class="nav-link">Blog</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+{% endblock %}
+
+{% block content %}
+  <!-- Page Content -->
+  <div class="container border-bottom py-5 px-5">
+    <div class="row">
+      <div class="col-lg-6 text-left">
+        <h1 class="mt-5">PHP Hosting</h1>
+        <h2><small>Cepat, handal, penuh dengan modul PHP yang anda butuhkan</small></h2>
+        <ul class="list-unstyled mt-3">
+          <li class="mt-1"><i class="fas fa-check-circle text-success"></i> Solusi PHP untuk performa query yang lebih cepat</li>
+          <li class="mt-1"><i class="fas fa-check-circle text-success"></i> Konsumsi memori yang lebih rendah</li>
+          <li class="mt-1"><i class="fas fa-check-circle text-success"></i> Support PHP 5.3 PHP 5.4 PHP 5.5 PHP 5.6 PHP 7</li>
+          <li class="mt-1"><i class="fas fa-check-circle text-success"></i> Fitur enkripsi IonCube dan Zend Guard Loaders</li>
+        </ul>
+      </div>
+      <div class="col-lg-6 text-right">
+        <img src="../assets/svg/illustration banner PHP hosting-01.svg" class="img-fluid" alt="php">
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5 px-5 pb-5 border-bottom">
+    <div class="row no-gutters">
+      <div class="col-lg-4 text-center">
+        <img src="../assets/svg/icon PHP Hosting_My SQL.svg" class="img-fluid" style="height:200px" alt="zendguard">
+        <p>PHP Zend Guard Loader</p>
+      </div>
+      <div class="col-lg-4 text-center">
+        <img src="../assets/svg/icon PHP Hosting_PHP Semua Versi.svg" class="img-fluid" style="height:200px" alt="composer">
+        <p>PHP Composer</p>
+      </div>
+      <div class="col-lg-4 text-center">
+        <img src="../assets/svg/icon PHP Hosting_CPanel.svg" class="img-fluid" style="height:200px" alt="ioncube">
+        <p>PHP IonCube Loader</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mb-5 px-5">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="mt-5 montserrat_bold">Paket Hosting Singapura yang Tepat</h1>
+        <h2><small>Diskon 40% + Domain dan SSL Gratis untuk Anda</small></h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container px-5 pb-5 package border-bottom">
+    <div class="row no-gutters">
+      {% for data in package_data %}
+      <div class="col-lg-3 text-center">
+        <ul class="list-unstyled">
+          <li>
+            <table class="table table-bordered {% if loop.index == 3 %}border-primary{% endif %}">
+              <tbody>
+                  <tr>
+                    <td class="{% if loop.index == 3 %}bg-primary text-light border-0{% endif %}"><h4>{{ data.package }}</h4></td>
+                  </tr>
+                  <tr>
+                    <td class="{% if loop.index == 3 %}bg-primary text-light border-0{% endif %}"><del>Rp {{ data.disc_price }}</del></td>
+                  </tr>
+                  <tr>
+                    <td class="{% if loop.index == 3 %}bg-primary text-light border-0{% endif %}">Rp {{ data.price|raw }}/bln</td>
+                  </tr>
+                  <tr>
+                    <td class="{% if loop.index == 3 %}user_reg text-light border-0{% endif %}"><span class='font-weight-bold'>{{ data.user }}</span> Pengguna Terdaftar</td>
+                  </tr>
+                  <tr>
+                    <td class="pt-4 pb-5 {% if loop.index == 3 %}border-0{% endif %}"><p>{{ data.desc|raw }}</p><button type="button" class="btn btn-outline-secondary rounded-pill px-4 py-2 mt-4 montserrat_regular {% if loop.index == 3 %}bg-primary text-light border-0{% endif %}">{{ data.action }}</button></td>
+                  </tr>
+              </tbody>
+            </table>
+          </li>
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="container mt-5 mb-3 px-5">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2><small>Powerful dengan Limit PHP yang Lebih Besar</small></h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container px-5 pb-5 border-bottom">
+    <div class="row">
+      <div class="col-lg-6 text-right">
+        <table class="table table-striped table-bordered">
+          <tbody>
+            <tr>
+              <td class="text-center"><i class="fas fa-check-circle text-success"></i></td>
+              <td class="text-center">min execution time 30s</td>
+            </tr>
+            <tr>
+              <td class="text-center"><i class="fas fa-check-circle text-success"></i></td>
+              <td class="text-center">max execution time 300s</td>
+            </tr>
+            <tr>
+              <td class="text-center"><i class="fas fa-check-circle text-success"></i></td>
+              <td class="text-center">php memory limit 1024 MB</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-lg-6 text-left">
+        <table class="table table-striped table-bordered">
+          <tbody>
+            <tr>
+              <td class="text-center"><i class="fas fa-check-circle text-success"></i></td>
+              <td class="text-center">post max size 128 MB</td>
+            </tr>
+            <tr>
+              <td class="text-center"><i class="fas fa-check-circle text-success"></i></td>
+              <td class="text-center">upload max filesize 128 MB</td>
+            </tr>
+            <tr>
+              <td class="text-center"><i class="fas fa-check-circle text-success"></i></td>
+              <td class="text-center">max input vars 2500</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-5 px-5">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2><small>Semua Paket Hosting Sudah Termasuk</small></h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container px-5 pb-5 border-bottom">
+    <div class="row">
+      <div class="col-lg-4 text-center">
+        <ul class="list-unstyled">
+          <li><img src="../assets/svg/icon PHP Hosting_PHP Semua Versi.svg" class="img-fluid" style="height:75px" alt="hosting_php"></li>
+          <li><h5 class="montserrat_bold">PHP Semua Versi</h5></li>
+          <li>Pilih mulai dari versi PHP 5.3 s/d PHP 7. Ubah sesuka Anda!</li>
+        </ul>
+      </div>
+      <div class="col-lg-4 text-center">
+        <ul class="list-unstyled">
+          <li><img src="../assets/svg/icon PHP Hosting_My SQL.svg" class="img-fluid" style="height:75px" alt="hosting_mysql"></li>
+          <li><h5 class="montserrat_bold">MySQL Versi 5.6</h5></li>
+          <li>Nikmati MySQL versi terbaru, tercepat dan kaya akan fitur.</li>
+        </ul>
+      </div>
+      <div class="col-lg-4 text-center">
+        <ul class="list-unstyled">
+          <li><img src="../assets/svg/icon PHP Hosting_CPanel.svg" class="img-fluid" style="height:75px" alt="hosting_cpanel"></li>
+          <li><h5 class="montserrat_bold">Panel Hosting cPanel</h5></li>
+          <li>Kelola website dengan panel canggih yang familiar di hati Anda.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 text-center">
+        <ul class="list-unstyled">
+          <li><img src="../assets/svg/icon PHP Hosting_garansi uptime.svg" class="img-fluid" style="height:75px" alt="hosting_garansi"></li>
+          <li><h5 class="montserrat_bold">Garansi Uptime 99.9%</h5></li>
+          <li>Data center yang mendukung kelangsungan website Anda 24/7.</li>
+        </ul>
+      </div>
+      <div class="col-lg-4 text-center">
+        <ul class="list-unstyled">
+          <li><img src="../assets/svg/icon PHP Hosting_InnoDB.svg" class="img-fluid" style="height:75px" alt="hosting_innodb"></li>
+          <li><h5 class="montserrat_bold">Database InnoDB Unlimited</h5></li>
+          <li>Jumlah dan ukuran database yang tumbuh sesuai kebutuhan Anda.</li>
+        </ul>
+      </div>
+      <div class="col-lg-4 text-center">
+        <ul class="list-unstyled">
+          <li><img src="../assets/svg/icon PHP Hosting_My SQL remote.svg" class="img-fluid" style="height:75px" alt="hosting_remote"></li>
+          <li><h5 class="montserrat_bold">Wildcard Remote MySQL</h5></li>
+          <li>Mendukung s/d 25 max_user_connections dan 100 max_connections.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5 mb-3 px-5">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2><small>Mendukung Penuh Framework Laravel</small></h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container border-bottom mb-5 px-5 pb-5 roboto_thin">
+    <div class="row">
+      <div class="col-lg-6 text-left pb-5">
+        <h4><small>Tak perlu menggunakan dedicated server ataupun VPS yang mahal. Layanan PHP hosting murah kami mendukung penuh framework favorit Anda</small></h4>
+        <ul class="list-unstyled mt-4">
+          <li class="mt-2"><i class="fas fa-check-circle text-success"></i> Install Laravel <span class="font-weight-bold">1 klik</span> dengan Softaculous Installer.</li>
+          <li class="mt-2"><i class="fas fa-check-circle text-success"></i> Mendukung ekstensi <span class="font-weight-bold">PHP MCrypt, phar, mbstring, json</span> dan <span class="font-weight-bold">fileinfo.</span></li>
+          <li class="mt-2"><i class="fas fa-check-circle text-success"></i> Tersedia <span class="font-weight-bold">Composer</span> dan <span class="font-weight-bold">SSH</span> untuk menginstall packages pilihan Anda.</li>
+        </ul>
+        <small>Nb. Composer dan SSH hanya tersedia pada paket Personal dan Bisnis</small><br/>
+        <button type="button" class="btn btn-outline-secondary rounded-pill bg-primary text-light border-0 mt-4 px-4 py-3 montserrat_regular">Pilih Hosting Anda</button>
+      </div>
+      <div class="col-lg-6 text-right">
+        <img src="../assets/svg/illustration banner support laravel hosting.svg" class="img-fluid" style="bottom:0" alt="hosting_laravel">
+      </div>
+    </div>
+  </div>
+
+  <div class="container mb-5 px-5 module">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2><small>Modul Lengkap untuk Menjalankan Aplikasi PHP Anda.</small></h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container px-5 module">
+    <div class="row">
+      <div class="col-lg-3 text-left pl-5">
+        <ul class="list-unstyled">
+          <li>IcePHP</li>
+          <li>apc</li>
+          <li>apcu</li>
+          <li>apm</li>
+          <li>ares</li>
+          <li>bcmatch</li>
+          <li>bcompiler</li>
+          <li>big_int</li>
+          <li>bitset</li>
+          <li>bloomy</li>
+          <li>bz2_filter</li>
+          <li>clamav</li>
+          <li>coin_acceptor</li>
+          <li>crack</li>
+          <li>dba</li>
+        </ul>
+      </div>
+      <div class="col-lg-3 text-left pl-5">
+        <ul class="list-unstyled">
+          <li>http</li>
+          <li>huffman</li>
+          <li>idn</li>
+          <li>igbinary</li>
+          <li>imagick</li>
+          <li>imap</li>
+          <li>inclued</li>
+          <li>inotify</li>
+          <li>interbase</li>
+          <li>intl</li>
+          <li>ioncube_loader</li>
+          <li>ioncube_loader_4</li>
+          <li>jsmin</li>
+          <li>json</li>
+          <li>Idap</li>
+        </ul>
+      </div>
+      <div class="col-lg-3 text-left pl-5">
+        <ul class="list-unstyled">
+          <li>nd_pdo_mysql</li>
+          <li>oauth</li>
+          <li>oci8</li>
+          <li>odbc</li>
+          <li>opcache</li>
+          <li>pdf</li>
+          <li>pdo</li>
+          <li>pdo_dblib</li>
+          <li>pdo_firebird</li>
+          <li>pdo_mysql</li>
+          <li>pdo_odbc</li>
+          <li>pdo_pgsql</li>
+          <li>pdo_sqlite</li>
+          <li>pgsql</li>
+          <li>phalcon</li>
+        </ul>
+      </div>
+      <div class="col-lg-3 text-left pl-5">
+        <ul class="list-unstyled">
+          <li>stats</li>
+          <li>stem</li>
+          <li>stomp</li>
+          <li>suhosin</li>
+          <li>sybase_ct</li>
+          <li>sysvmg</li>
+          <li>sysvsem</li>
+          <li>sysvshm</li>
+          <li>tidy</li>
+          <li>timezonedb</li>
+          <li>trader</li>
+          <li>translit</li>
+          <li>uploadprogress</li>
+          <li>uri_template</li>
+          <li>uuid</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-4 mb-5 px-5 pb-5 module border-bottom">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <button type="button" class="btn btn-outline-secondary rounded-pill px-4 py-3 montserrat_regular">Selengkapnya</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container px-5">
+    <div class="row">
+      <div class="col-lg-6 text-left py-4">
+        <h2><small>Linux Hosting yang Stabil dengan Teknologi LVE</small></h2>
+        <p class="my-3 roboto_thin">SuperMicro <span class="font-weight-bold">Intel Xeon 24-Cores</span> server dengan RAM <span class="font-weight-bold">128 MB</span> dan teknologi <span class="font-weight-bold">LVE CloudLinux</span> untuk stabilitas server Anda. Dilengkapi dengan <span class="font-weight-bold">SSD</span> untuk kecepatan <span class="font-weight-bold">MySQL</span> dan caching, Apache load balancer berbasis LiteSpeed Technologies, <span class="font-weight-bold">CageFS</span> security, <span class="font-weight-bold">Raid-10</span> protection dan auto backup untuk keamanan website PHP Anda.</p>
+        <button type="button" class="btn btn-outline-secondary rounded-pill bg-primary text-light border-0 mb-4 px-4 py-3 montserrat_regular">Pilih Hosting Anda</button>
+      </div>
+      <div class="col-lg-6 text-right">
+        <img src="../assets/images/Image support.png" class="img-fluid" style="bottom:0" alt="img_support">
+      </div>
+    </div>
+  </div>
+
+  <div class="container py-4 px-5 bg-light">
+    <div class="row">
+      <div class="col-lg-6 text-left mt-2">
+        <span>Bagikan jika Anda menyukai halaman ini.</span>
+      </div>
+      <div class="col-lg-6 text-left pl-5 pt-2">
+        <div class="share-to-sosmed">
+          <!--from https://www.buttons.social--><script>document.write('<a href="https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(document.URL)+'"target="_blank"title="Facebook"style="margin-right:20px;display:inline-block;line-height:2em;vertical-align:middle;text-align:center;width:2em;height:2em;color:#fff;border-radius:10%;background:#3b5998;"><span style="font-size:.9em;"><i class="fab fa-facebook-f"></i></span></a> <a href="https://twitter.com/share?url='+encodeURIComponent(document.URL)+'&text='+encodeURIComponent(document.title)+'"target="_blank"title="Twitter"style="margin-right:20px;display:inline-block;line-height:2em;vertical-align:middle;text-align:center;width:2em;height:2em;color:#fff;border-radius:10%;background:#1b95e0;"><span style="font-size:.9em;"><i class="fab fa-twitter"></i></span></a> <a href="https://plus.google.com/share?url='+encodeURIComponent(document.URL)+'"target="_blank"title="Google+"style="display:inline-block;line-height:2em;vertical-align:middle;text-align:center;width:2em;height:2em;color:#fff;border-radius:10%;background:#dd4b39;"><i class="fab fa-google-plus-g"></i></a>');</script><!--end buttons.social-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container bg-primary text-light pt-5 pb-5 px-5">
+    <div class="row">
+      <div class="col-lg-8 text-left mt-3">
+        <h3>Perlu <span class="montserrat_bold">BANTUAN?</span> Hubungi Kami : <span class="montserrat_bold">0274 - 5305505</span></h3>
+      </div>
+      <div class="col-lg-4 text-right">
+        <button type="button" class="btn btn-outline-secondary rounded-pill bg-primary text-light border-white mr-5 px-4 py-3 montserrat_regular"><i class="far fa-comments"></i> Live Chat</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container bg-dark text-light px-5 py-5 aboutus">
+    <div class="row">
+      <div class="col-lg-3 text-left">
+        <h5>HUBUNGI KAMI</h5>
+        <ul class="list-unstyled">
+          <li>0274-5305505</li>
+          <li>Senin - Minggu</li>
+          <li>24 Jam Nonstop</li>
+          <li>&nbsp;</li>
+          <li>Jl. Selokan Mataram Monjali</li>
+          <li>Karangjati MT I/304</li>
+          <li>Sinduadi, Mlati, Sleman</li>
+          <li>Yogyakarta 55284</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 text-left">
+        <h5>LAYANAN</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light">Domain</a></li>
+          <li><a href="#" class="text-light">Shared Hosting</a></li>
+          <li><a href="#" class="text-light">Cloud VPS Hosting</a></li>
+          <li><a href="#" class="text-light">Managed VPS Hosting</a></li>
+          <li><a href="#" class="text-light">Web Builder</a></li>
+          <li><a href="#" class="text-light">Keamanan SSL / HTTPS</a></li>
+          <li><a href="#" class="text-light">Jasa Pembuatan Website</a></li>
+          <li><a href="#" class="text-light">Program Affiliasi</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 text-left">
+        <h5>SERVICE HOSTING</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light">Hosting Murah</a></a></li>
+          <li><a href="#" class="text-light">Hosting Indonesia</a></li>
+          <li><a href="#" class="text-light">Hosting Singapura SG</a></li>
+          <li><a href="#" class="text-light">Hosting PHP</a></li>
+          <li><a href="#" class="text-light">Hosting Wordpress</a></li>
+          <li><a href="#" class="text-light">Hosting Laravel</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 text-left">
+        <h5>TUTORIAL</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light">Knowledgebase</a></li>
+          <li><a href="#" class="text-light">Blog</a></li>
+          <li><a href="#" class="text-light">Cara Pembayaran</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container bg-dark text-light px-5 py-3 aboutus">
+    <div class="row">
+      <div class="col-lg-3 text-left">
+        <h5>TENTANG KAMI</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light">Tim Niaga Hoster</a></li>
+          <li><a href="#" class="text-light">Karir</a></li>
+          <li><a href="#" class="text-light">Events</a></li>
+          <li><a href="#" class="text-light">Penawaran & Promo Special</a></li>
+          <li><a href="#" class="text-light">Kontak Kami</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 text-left">
+        <h5>KENAPA PILIH NIAGA HOSTER?</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light">Support Terbaik</a></li>
+          <li><a href="#" class="text-light">Garansi Harga Termurah</a></li>
+          <li><a href="#" class="text-light">Domain Gratis Selamanya</a></li>
+          <li><a href="#" class="text-light">Data Center Hosting Terbaik</a></li>
+          <li><a href="#" class="text-light">Review Pelanggan</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 text-left">
+        <h5>NEWSLETTER</h5>
+        <ul class="list-unstyled">
+          <li>
+            <div class="modal-body text-center px-0">
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="Email" required>
+                <span class="input-group-btn">
+                  <input type="submit" class="btn btn-primary" value="Subscribe">
+                </span>
+              </div>
+            </div>
+          </li>
+          <li><small class="text-secondary">Dapatkan promo dan konten menarik dari penyedia hosting terbaik Anda.</small></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 text-right ">
+        <a href="#"><img src="../assets/svg/facebook.svg" class="img-fluid mt-4" style="height:40px" alt="fb_icon"></a>
+        <a href="#"><img src="../assets/svg/twitter.svg" class="img-fluid mt-4 ml-4" style="height:40px" alt="tw_icon"></a>
+        <a href="#"><img src="../assets/svg/google-plus.svg" class="img-fluid mt-4 ml-3" style="height:55px" alt="go_icon"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container border-bottom border-dark bg-dark text-light px-5 py-3 payment">
+    <div class="row">
+      <div class="col-lg-12 text-left">
+        <h5><small>PEMBAYARAN</small></h5>
+        <a href="#"><img src="../assets/svg/mcard.svg" class="img-fluid mr-2" style="height:35px" alt="mc_icon"></a>
+        <a href="#"><img src="../assets/svg/visa.svg" class="img-fluid mr-2" style="height:75px" alt="vs_icon"></a>
+        <a href="#"><img src="../assets/svg/maestro.svg" class="img-fluid mr-2" style="height:55px" alt="ms_icon"></a>
+        <a href="#"><img src="../assets/svg/hsbc.svg" class="img-fluid mr-2" style="height:75px" alt="hs_icon"></a>
+        <a href="#"><img src="../assets/svg/paypal.svg" class="img-fluid mr-2" style="height:40px" alt="pp_icon"></a>
+        <a href="#"><img src="../assets/svg/bitcoin.svg" class="img-fluid mr-2" style="height:30px" alt="bc_icon"></a>
+        <p>Aktivasi instan dengan e-Payment Hosting dan domain langsung aktif!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container bg-dark text-light px-5 py-3 footer">
+    <div class="row">
+      <div class="col-lg-8 text-left">
+        <small>
+          Copyright @2016 Niagahoster | Hosting powered by PHP7, CloudLinux, CloudFlare, BitNinja and DC Biznet Technovillage Jakarta<br/>
+          Cloud VPS Murah powered by Webuzo Softaculous, Intel SSD and cloud computing technology
+        </small>
+      </div>
+      <div class="col-lg-4 text-right">
+        <h6><small><a href="#" class="text-light">Syarat dan Ketentuan</a> | <a href="#" class="text-light">Kebijakan Privasi</a></small></h6>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block footer %}
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.slim.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+{% endblock %}
