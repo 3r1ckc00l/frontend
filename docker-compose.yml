@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: Dockerfile
     image: php_service
-    container_name: app
+    container_name: fe_app
     restart: unless-stopped
     tty: true
     environment:
@@ -23,7 +23,7 @@ services:
   #Nginx Service
   webserver:
     image: nginx:alpine
-    container_name: webserver
+    container_name: fe_web
     restart: unless-stopped
     tty: true
     ports:
